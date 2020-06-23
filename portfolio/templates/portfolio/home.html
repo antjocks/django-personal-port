@@ -1,0 +1,42 @@
+{% extends 'portfolio/base.html' %} {% block content %} {% load static %}
+<div class="container">
+  <div class="jumbotron">
+    <img
+      src="{% static 'portfolio/IMG_0154.JPG' %}"
+      class="img-fluid"
+      alt="Responsive image"
+      id="main-img"
+    />
+    <h1 class="display-4">Let's Get To Building</h1>
+    <p class="lead">
+      Hi, my name is Anthony and I love building websites from the ground up.
+    </p>
+    <hr class="my-4" />
+  </div>
+</div>
+
+<div class="main">
+  <div class="album py-5">
+    <div class="container">
+      <div class="row">
+        {% for project in projects.all %}
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="{{ project.image.url }}" />
+            <div class="card-body">
+              <p class="card-text">{{ project.description }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <p>© Anthony Jocks {% now "Y" %}</p>
+  </div>
+</footer>
+{% endblock %}

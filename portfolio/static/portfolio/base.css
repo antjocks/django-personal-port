@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+
+.display-4 {
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #edf2f4 !important;
+}
+
+.card-body {
+  background-color: #edf2f4 !important;
+}
+
+.main {
+  background-color: #edf2f4 !important;
+}
