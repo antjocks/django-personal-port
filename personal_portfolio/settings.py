@@ -25,7 +25,7 @@ SECRET_KEY = 'f@k!4m_*=38lu%gev1=p=m6-2rqn#bs+^!_6h(!&!fb6bn!r&q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['antjocks.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.antjocks.com']
 
 
 # Application definition
