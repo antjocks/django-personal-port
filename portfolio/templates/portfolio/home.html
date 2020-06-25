@@ -21,8 +21,11 @@
       <div class="row">
         {% for project in projects.all %}
         <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="{{ project.image.url }}" />
+          <div class="card mb-4 text-center bg-white" id="cardbg">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <a href="{{ project.url }}">
+              <img class="card-img-top" src="{{ project.image.url }}" />
+            </a>
             <div class="card-body">
               <p class="card-text">{{ project.description }}</p>
             </div>
